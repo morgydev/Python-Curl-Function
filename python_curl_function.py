@@ -39,7 +39,7 @@ class CurlFunction():
         return curl
 
     # For real input functions, these will be slightly more optimal
-    def rcurl2D(self, fx, fy, Kx, Ky):
+    def rcurl2D(self, fx, fy):
         Kx, Ky = self.rkspace2D(fx, fy)
         fxhat = self.rfft2D(fx)
         fyhat = self.rfft2D(fy)
