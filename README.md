@@ -11,7 +11,9 @@ An extension to numpy using discrete fourier transforms to compute the curl of 2
 ```rcurl3D``` computes the curl for a 3D input real function $\boldsymbol{F} = (F_x, F_y, F_z)$.
 
 ## Usage
-![alt text](https://imgur.com/a/AnMvL3l)
+Download the ```python_curl_function.py``` file and store it in the same file as your project (or wherever, really), and import it into your code using ```from python_curl_function import CurlFunction```.
+
+<img src='./ExampleUsage.png' width=60%>
 
 ## Explanation
 Mathematically, the curl $\nabla \times \boldsymbol{F}$ can be written as
