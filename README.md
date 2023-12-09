@@ -43,7 +43,7 @@ $\hat{f}(\vec{k}) = \frac{1}{N} \Sigma_{m = 0}^{N-1} f(\vec{x}) e^{-i\vec{k} \bu
 
 $f(\vec{x}) = \Sigma_{k = 0}^{N-1} \hat{f}(\vec{k}) e^{i\vec{k} \bullet \vec{x}_m}$
 
-where $\vec{x}_m = -2 \pi \vec{x}/N$
+where $\vec{x}_m = \frac{2 \pi m}{N}$
 
 ## Further Optimisation
 For real functions, you can instead use ```rcurl2D``` and ```rcurl3D``` to perform a real discrete fourier transform, which is Hermitian-symmetric and thus we can discard half of the transformed values to save on memory and computation.
