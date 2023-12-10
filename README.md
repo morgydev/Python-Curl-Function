@@ -46,4 +46,4 @@ $f(\vec{x}) = \Sigma_{k = -N/2 + 1}^{N/2} \hat{f}(\vec{k}) e^{i\vec{k} \bullet \
 where $\vec{x}_m = \frac{2 \pi m}{N}$
 
 ## Further Optimisation
-For real functions, you can instead use ```rcurl2D``` and ```rcurl3D``` to perform a real discrete fourier transform, which is Hermitian-symmetric and thus we can discard half of the transformed values to save on memory and computation.
+For real functions, you can instead use ```rcurl2D``` and ```rcurl3D``` to perform a real discrete fourier transform. This is because the discrete fourier transform of a real function is Hermitian-symmetric and thus we can discard half of the transformed values to save on memory and computation.
