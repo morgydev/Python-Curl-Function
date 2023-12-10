@@ -41,7 +41,7 @@ Clearly, there are 6 derivatives (2 in the 2D case) required to compute. This co
 
 $\hat{f}(\vec{k}) = \frac{1}{N} \Sigma_{m = 0}^{N-1} f(\vec{x}) e^{-i\vec{k} \bullet \vec{x}_m}$
 
-$f(\vec{x}) = \Sigma_{k = 0}^{N-1} \hat{f}(\vec{k}) e^{i\vec{k} \bullet \vec{x}_m}$
+$f(\vec{x}) = \Sigma_{k = -N/2 + 1}^{N/2} \hat{f}(\vec{k}) e^{i\vec{k} \bullet \vec{x}_m}$
 
 where $\vec{x}_m = \frac{2 \pi m}{N}$
 
