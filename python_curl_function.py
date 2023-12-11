@@ -35,7 +35,7 @@ class CurlFunction():
         dfz_dx = self.ifft(dfzhat_dx)
         dfz_dy = self.ifft(dfzhat_dy)
 
-        curl = np.array([[dfz_dy - dfy_dz], [dfx_dz - dfz_dx], [dfy_dx - dfx_dy]])
+        curl = np.array([dfz_dy - dfy_dz, dfx_dz - dfz_dx, dfy_dx - dfx_dy])
         return curl
 
     # For real input functions, these will be slightly more optimal
@@ -70,7 +70,7 @@ class CurlFunction():
         dfz_dx = self.irfft(dfzhat_dx)
         dfz_dy = self.irfft(dfzhat_dy)
 
-        curl = np.array([[dfz_dy - dfy_dz], [dfx_dz - dfz_dx], [dfy_dx - dfx_dy]])
+        curl = np.array([dfz_dy - dfy_dz, dfx_dz - dfz_dx, dfy_dx - dfx_dy])
         return curl
     
     # Setup k-space for our fourier derivatives and for our real fourier derivatives
