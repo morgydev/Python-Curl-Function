@@ -14,7 +14,7 @@ An extension to numpy using discrete fourier transforms to compute the curl of 2
 You can download it simply with the download button, or using 
 
 ```
-wget https://raw.githubusercontent.com/themathsgirl/Python-Curl-Function/main/python_curl_function.py
+wget https://raw.githubusercontent.com/morgannamaths/Python-Curl-Function/main/python_curl_function.py
 ```
 
 in the terminal.
