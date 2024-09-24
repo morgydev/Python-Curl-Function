@@ -39,9 +39,9 @@ $= \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \rig
 
 Clearly, there are 6 derivatives (2 in the 2D case) required to compute. This code utilises the discrete fourier transform to compute these, which (based on testing) are more accurate than at least 10th-order finite difference derivatives, at the cost of being more computationally expensive.
 
-$\hat{f}(\vec{k}) = \frac{1}{N} \Sigma_{m = 0}^{N-1} f(\vec{x}) e^{-i\vec{k} \bullet \vec{x}_m}$
+$\hat{f}(\vec{k}) = \frac{1}{N} \Sigma_{m = 0}^{N-1} f(\vec{x})$ $e^{-i\vec{k} \bullet \vec{x}_m}$
 
-$f(\vec{x}) = \Sigma_{k = -N/2 + 1}^{N/2} \hat{f}(\vec{k}) e^{i\vec{k} \bullet \vec{x}_m}$
+$f(\vec{x}) = \Sigma_{k = -N/2 + 1}^{N/2} \hat{f}(\vec{k})$ $e^{i\vec{k} \bullet \vec{x}_m}$
 
 where $\vec{x}_m$ = $\frac{2 \pi m}{N}$
 
